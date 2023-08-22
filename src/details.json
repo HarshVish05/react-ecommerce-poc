@@ -1,0 +1,128 @@
+{
+  "Iphone 14": {
+    "id": 1,
+    "name": "Iphone 14",
+    "description": "15.54 cm (6.1-inch) Super Retina XDR display featuring Always-On and ProMotion.48MP Main camera for up to 4x greater resolution.All-day battery life and up to 23 hours of video playback.",
+    "price": "100000",
+    "image": "../../images/mobiles/iphone14.jpeg"
+  },
+  "Samsung S23": {
+    "id": 2,
+    "name": "Samsung S23",
+    "description": "More innovation, less footprint - Galaxy S23 Ultra's striking symmetrical design returns with one major difference: recycled and eco-conscious materials. From the metal frame to the glass finish, it's polished with fresh new colors inspired by nature.",
+    "price": "120000",
+    "image": "../../images/mobiles/samsung s23.jpg"
+  },
+  "Vivo V12": {
+    "id": 3,
+    "name": "Vivo V12",
+    "description": "50MP+2MP Rear Camera | 8MP Selfie Camera.16.86 cm (6.64 inch) FHD+ Sunlight Display.Memory & SIM: 6GB RAM | 128GB internal memory.44W flashCharge with 5000 mAh battery",
+    "price": "30000",
+    "image": "../../images/mobiles/vivo v12.jpg"
+  },
+  "Redmi 12": {
+    "id": 4,
+    "name": "Redmi 12",
+    "description": "4 GB RAM | 128 GB ROM | Expandable Upto 1 TB.17.25 cm (6.79 inch) Full HD+ Display.50MP + 8MP + 2MP | 8MP Front Camera.5000 mAh Battery.Helio G88 Processor",
+    "price": "10000",
+    "image": "../../images/mobiles/redmi12.jpg"
+  },
+  "Poco M6": {
+    "id": 5,
+    "name": "Poco M6",
+    "description": "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB/17.25 cm (6.79 inch) Full HD+ Display/50MP + 2MP | 8MP Front Camera/5000 mAh Battery/Snapdragon 4 Gen 2 Processor",
+    "price": "9000",
+    "image": "../../images/mobiles/poco m6.jpg"
+  },
+  "Realme Narzo 60 pro": {
+    "id": 6,
+    "name": "Realme Narzo 60 pro",
+    "description": "Immerse yourself in a smooth and responsive visual experience with our vibrant 90Hz Super AMOLED display. Enjoy seamless scrolling, fluid animations, and razor-sharp image quality, bringing your content to life like never before. Whether you're gaming, browsing, or watching videos, every interaction will be a delight for your eyes.",
+    "price": "26999",
+    "image": "../../images/mobiles/realme_narzo_60.jpg"
+  },
+  "Washing Machine":{
+    "id": 7,
+    "name": "Washing Machine",
+    "description": "Fully Automatic Top Load Washing Machines are ergonomically friendly and provide great wash quality,800 rpm : Higher the spin speed, lower the drying time,Number of wash programs - 8,5 Star Rating,6.5 kg",
+    "price": "23000",
+    "image": "../../images/electronics/Washing Machine.jpg"
+  },
+  "Microwave Oven":{
+    "id": 8,
+    "name": "Microwave Oven",
+    "description": "32 L : Great for Large families,Convection : Can be used for baking along with grilling, reheating, defrosting and cooking,Tact (Buttons) : Even with hands soiled with dough, these buttons can be used,Child Lock : Ensures complete safety especially for homes with small children",
+    "price": "10000",
+    "image": "../../images/electronics/oven.jpg"
+  },
+  "Air conditioner":{
+    "id": 9,
+    "name": "Air conditioner",
+    "description": "32 L : Great for Large families,Convection : Can be used for baking along with grilling, reheating, defrosting and cooking,Tact (Buttons) : Even with hands soiled with dough, these buttons can be used,Child Lock : Ensures complete safety especially for homes with small children",
+    "price": "40000",
+    "image": "../../images/electronics/ac.jpg"
+  },
+  "Mixer Grinder":{
+    "id": 10,
+    "name": "Mixer Grinder",
+    "description": "500 W : Higher the Wattage, tougher the Juicing/Grinding,Suitable for: Chutney Grinding",
+    "price": "5000",
+    "image": "../../images/electronics/mixer grinder.jpg"
+  },
+  "TV":{
+    "id": 11,
+    "name": "TV",
+    "description": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube, Operating System: Android (Google Assistant & Chromecast in-built), Resolution: HD Ready 1366 x 768 Pixels, Sound Output: 20 W, Refresh Rate: 60 Hz",
+    "price": "35000",
+    "image": "../../images/electronics/tv.jpg"
+  },
+  "Ceiling Fan":{
+    "id": 12,
+    "name": "Ceiling Fan",
+    "description": "Crompton EN Hyperjet 5 Star Rating 1200 mm 3 Blade Ceiling Fan Brown Pack of 1",
+    "price": "6000",
+    "image": "../../images/electronics/fan.jpg"
+  },
+  "The 48 Laws of Power":{
+    "id": 13,
+    "name": "The 48 Laws of Power",
+    "description": "details",
+    "price": "799",
+    "image": "../../images/books/laws.jpg"
+  },
+  "The Murder of Roger Ackroyd":{
+    "id": 14,
+    "name": "The Murder of Roger Ackroyd",
+    "description": "details",
+    "price": "499",
+    "image": "../../images/books/roger ackroyd.jpg"
+  },
+  "The Immortals of Meluha":{
+    "id": 15,
+    "name": "The Immortals of Meluha",
+    "description": "details",
+    "price": "415",
+    "image": "../../images/books/the-immortals-of-meluha.jpg"
+  },
+  "Gone Girl":{
+    "id": 16,
+    "name": "Gone Girl",
+    "description": "details",
+    "price": "500",
+    "image": "../../images/books/gone girl.jpg"
+  },
+  "Verity":{
+    "id": 17,
+    "name": "Verity",
+    "description": "details",
+    "price": "350",
+    "image": "../../images/books/Verity.jpg"
+  },
+  "The Silence of the Lambs":{
+    "id": 18,
+    "name": "The Silence of the Lambs",
+    "description": "details",
+    "price": "600",
+    "image": "../../images/books/the silence of the lambs.jpg"
+  }
+}

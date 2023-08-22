@@ -1,0 +1,36 @@
+.image img{
+    width: 60%;
+}
+.image{
+    width: 50%;
+    
+}
+.details{
+    display: flex;
+}
+.itemDetails{
+    width: 50%;
+}
+.quantity{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    display: flex;
+}
+.button{
+   border: 2px solid yellow;
+   border-radius: 10px;
+   width: 20%;
+   height: 2%;
+   background-color: yellow;
+}
+.cart{
+    position: absolute;
+    top: 60%;
+    right: 21%;
+}
+.cartbutton{
+    border: 2px solid yellow;
+   border-radius: 10px;
+   background-color: yellow;
+}

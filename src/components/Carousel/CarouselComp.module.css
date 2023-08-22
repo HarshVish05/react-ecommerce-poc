@@ -1,0 +1,21 @@
+.carousel {
+    background-color: #f6f7f8;
+    border-radius: 2%;
+    box-shadow: 3px 3px 10px 4px rgba(12, 12, 12, 0.2);
+    height: 320px;
+    width: 510px;
+    margin-top: 5%;
+    margin-left: 30%;
+  }
+
+  .image{
+    width: 60%;
+    height: 200px;
+  }
+  
+
+  :global .carousel-caption{
+    position: relative;
+    /* top: 10%; */
+    left: 1%;
+  }

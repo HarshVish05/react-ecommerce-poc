@@ -1,0 +1,10 @@
+.card{
+    width: 20%;
+    /* color: aqua; */
+    margin: 2%;
+}
+.container{
+    display: flex;
+    margin: 2%;
+    flex-wrap: wrap;
+}

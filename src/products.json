@@ -1,0 +1,126 @@
+{
+    "mobile":[{
+        "id":1,
+        "name":"Iphone 14",
+        "price":"100000",
+        "image":"../../images/mobiles/iphone14.jpeg",
+        "description": "details"
+    },
+    {
+        "id":2,
+        "name":"Samsung S23",
+        "price":"120000",
+        "image":"../../images/mobiles/samsung s23.jpg"
+    },
+    {
+        "id":3,
+        "name":"Vivo V12",
+        "price":"30000",
+        "image":"../../images/mobiles/vivo v12.jpg"
+    },
+    {
+        "id":4,
+        "name":"Redmi 12",
+        "price":"10000",
+        "image":"../../images/mobiles/redmi12.jpg"
+    },
+    {
+        "id":5,
+        "name":"Poco M6",
+        "price":"9000",
+        "image":"../../images/mobiles/poco m6.jpg"
+    },
+    {
+        "id":6,
+        "name":"Realme Narzo 60 pro",
+        "price":"26999",
+        "image":"../../images/mobiles/realme_narzo_60.jpg"
+    }
+],
+    "electronics":[{
+        "id":1,
+        "name":"Washing Machine",
+        "price":"23000",
+        "image":"../../images/electronics/Washing Machine.jpg"
+    },
+    {
+        "id":2,
+        "name":"Microwave Oven",
+        "price":"10000",
+        "image":"../../images/electronics/oven.jpg"
+    },
+    {
+        "id":3,
+        "name":"Air conditioner",
+        "price":"40000",
+        "image":"../../images/electronics/ac.jpg"
+    },
+    {
+        "id":4,
+        "name":"Mixer Grinder",
+        "price":"5000",
+        "image":"../../images/electronics/mixer grinder.jpg"
+    },
+    {
+        "id":5,
+        "name":"Tv",
+        "price":"35000",
+        "image":"../../images/electronics/tv.jpg"
+    },
+    {
+        "id":6,
+        "name":"Ceiling Fan ",
+        "price":"6000",
+        "image":"../../images/electronics/fan.jpg"
+    }],
+    "books":[{
+        "id":1,
+        "name":"The 48 Laws of Power",
+        "price":"799",
+        "image":"../../images/books/laws.jpg"
+    },
+    {
+        "id":2,
+        "name":"The Murder of Roger Ackroyd",
+        "price":"499",
+        "image":"../../images/books/roger ackroyd.jpg"
+    },
+    {
+        "id":3,
+        "name":"The Immortals of Meluha",
+        "price":"415",
+        "image":"../../images/books/the-immortals-of-meluha.jpg"
+    },
+    {
+        "id":4,
+        "name":"Gone Girl",
+        "price":"500",
+        "image":"../../images/books/gone girl.jpg"
+    },
+    {
+        "id":5,
+        "name":"Verity",
+        "price":"350",
+        "image":"../../images/books/Verity.jpg"
+    },
+    {
+        "id":6,
+        "name":"The Silence of the Lambs",
+        "price":"600",
+        "image":"../../images/books/the silence of the lambs.jpg"
+    }
+    
+],
+    "fashion":[
+        {
+            "id":1,
+            "name":"Men",
+            "image":"../../images/samsung s23.jpg"
+        },
+        {
+            "id":2,
+            "name":"Women",
+            "image":"../../images/samsung s23.jpg"
+        }
+    ]
+}
