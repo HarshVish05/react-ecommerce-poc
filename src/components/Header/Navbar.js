@@ -4,6 +4,7 @@ import "./navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  // console.log("navbar rendering");
   const navigate = useNavigate();
   const [searchTerm, setsearchTerm] = useState("");
 
@@ -15,8 +16,15 @@ const Navbar = () => {
   const showCart = () => {
     navigate('/cart')
   }
+  const logout = () => {
+    console.log('loggin out');
+    localStorage.setItem('login',false);
+    console.log('value set to false ');
+    navigate('/login');
+  }
 
   return (
+    
     <nav
       className="navbar navbar-expand-lg bg-body-tertiary"
       data-bs-theme="dark"
@@ -63,6 +71,12 @@ const Navbar = () => {
           <div>
             <BsCart className="shoppingCart" onClick={showCart} />
           </div>
+          <button
+              className="btn btn-outline-success button"
+              onClick={logout}
+            >
+              Logout
+            </button>
         </div>
       </div>
     </nav>

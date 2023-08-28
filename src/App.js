@@ -8,30 +8,29 @@ import { useState } from 'react';
 import ProductDetails from './components/Details/ProductDetails';
 import Cart from './components/Shopping Cart/Cart';
 import SearchCard from './components/Card/SearchCard';
+import Login from './components/Login/Login';
+import Protected from './components/auth/Protected';
 
 function App() {
   const [category, setSelectedCategory] = useState('');
-  // const showMore = (category) => {
-  //   console.log("clicked from app");
-  //   setSelectedCategory(category);
-  //   console.log(category);
-    
-  // };
+  
   return (
     <div className="App">
       <BrowserRouter>
       <Navbar/>
       <Routes>
-      <Route path="/" element={<CarouselComp />}/>
-      {/* <Route path="/more" element={<Cards />}/> */}
-      <Route path="/more" element={<Cards selectedCategory={category}/>}/>
-      <Route path="/details" element={<ProductDetails/>}/>
-      <Route path='/cart' element={<Cart/>}/>
-      <Route path='/search' element={<SearchCard/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/" element={<Protected> <CarouselComp/> </Protected>}/>
+      {/* <Route path="/" element={<CarouselComp />}/> */}
+      <Route path="/more" element={<Protected> <Cards selectedCategory={category}/></Protected>}/>
+      <Route path="/details" element={<Protected> <ProductDetails/></Protected>}/>
+      <Route path='/cart' element={<Protected> <Cart/> </Protected>}/>
+      <Route path='/search' element={<Protected><SearchCard/></Protected>}/>
       </Routes>
     
       <Footer/>
       </BrowserRouter>
+      {/* <Login/> */}
     </div>
   );
 }

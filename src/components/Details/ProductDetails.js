@@ -4,22 +4,27 @@ import details from "../../details.json";
 import "./prodDetails.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useCart } from "../../CartContext";
+import { useDispatch } from "react-redux";
+import { addToCart,deductFromCart } from "../../redux/Action/action";
 
 const ProductDetails = () => {
   const location = useLocation();
-  const [quantity, setQuantity] = useState(1);
+
+  const dispatch = useDispatch()
+
+  const [quantity, setQuantity] = useState(0);
   const navigate = useNavigate()
   const selectedProd = location.state?.prod;
   // const selectedCategory = location.state?.selectedCategory;
   // const [items,setItem] = useState(selectedProd)
-  const {addToCart} = useCart();
+  // const {addToCart} = useCart();
   const goToCart = ()=> {
-    addToCart(details[selectedProd],quantity)
+    dispatch(addToCart(details[selectedProd],quantity))
     navigate("/cart",{state:{quantity}})
   }
   
-  const deductFromCart = () => {
-    if (quantity === 1) {
+  const deductQuantity = () => {
+    if (quantity === 0) {
       alert("Your cart is empty");
     } else {
       setQuantity(quantity - 1);
@@ -40,7 +45,7 @@ const ProductDetails = () => {
         </div>
       </div>
       <div className="quantity">
-        <button type="submit" onClick={deductFromCart} className="button ">
+        <button type="submit" onClick={deductQuantity} className="button ">
           -
         </button>
         <p>quantity: {quantity}</p>

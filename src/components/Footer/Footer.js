@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer-component">
       
       <div className="footer-container">
-        <p> &copy; 2023 WHO </p>
+        <p> &copy; 2023 LeloKart </p>
       </div>
     </div>
   );

@@ -13,9 +13,11 @@
     margin-left: 10%;
     padding: 1%;
     margin-right: 10%;
+    flex-wrap: wrap;
 }
 .cart-items{
-     display: flex;
+    display: flex;
+    /* flex-wrap: wrap; */
     
  }
  .prod-image img{
@@ -27,7 +29,7 @@
  .prod-details{
     margin-left: 10%;
     padding: 1%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 80%;
 }
 .prod-details h3{

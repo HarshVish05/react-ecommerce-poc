@@ -11,14 +11,15 @@
     
     .footer-container{
       display: flex;
-  
+      margin: 1%;
     }
     
     .footer-container p{
      position: relative;
-     bottom: 15px;
-     right: 176px;
-     display: flex;
+     /* bottom: 15px; */
+     left: 47%;
+     /* right: 176px;
+     display: flex; */
      color: white;
      margin-bottom: 5px;
     
