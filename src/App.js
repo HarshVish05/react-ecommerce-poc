@@ -10,6 +10,7 @@ import Cart from './components/Shopping Cart/Cart';
 import SearchCard from './components/Card/SearchCard';
 import Login from './components/Login/Login';
 import Protected from './components/auth/Protected';
+import Registration from './components/Register/Registration';
 
 function App() {
   const [category, setSelectedCategory] = useState('');
@@ -20,6 +21,7 @@ function App() {
       <Navbar/>
       <Routes>
       <Route path="/login" element={<Login/>}/>
+      <Route path="/register" element={<Registration/>}/>
       <Route path="/" element={<Protected> <CarouselComp/> </Protected>}/>
       {/* <Route path="/" element={<CarouselComp />}/> */}
       <Route path="/more" element={<Protected> <Cards selectedCategory={category}/></Protected>}/>

@@ -9,7 +9,7 @@ const Protected = (props) => {
     if(!login){
       navigate('/login')
     }
-  })
+  },[])
   return (
     <div>
         {props.children}

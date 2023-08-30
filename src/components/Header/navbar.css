@@ -13,11 +13,14 @@
     color: #000;
  }
  .d-flex{
-    right: 43%;
+    right: 29%;
     position: relative;
  }
  .link{
     text-decoration: none;
     color: white;
     padding: 1%;
+ }
+ .logout{
+   width: 10% !important;
  }

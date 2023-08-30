@@ -17,9 +17,8 @@ const Navbar = () => {
     navigate('/cart')
   }
   const logout = () => {
-    console.log('loggin out');
-    localStorage.setItem('login',false);
-    console.log('value set to false ');
+    // localStorage.setItem('login',false);
+    localStorage.removeItem('login')
     navigate('/login');
   }
 
@@ -72,7 +71,7 @@ const Navbar = () => {
             <BsCart className="shoppingCart" onClick={showCart} />
           </div>
           <button
-              className="btn btn-outline-success button"
+              className="btn btn-outline-success button logout"
               onClick={logout}
             >
               Logout

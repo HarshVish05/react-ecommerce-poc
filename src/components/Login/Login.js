@@ -1,20 +1,31 @@
 import React, { useEffect, useState } from "react";
 import "./login.css";
-import { useNavigate } from "react-router-dom";
-import users from '../../user.json'
+import { useNavigate,Link } from "react-router-dom";
+// import users from '../../../user.json'
+import axios from 'axios'
 
 const Login = () => {
   const navigate = useNavigate()
   const [userName,setUserName] = useState('')
   const [password,setPassword] = useState('')
   const login = () =>{
-    users['credentials'].map((user)=>{
+    users.map((user)=>{
       if(user.username === userName && user.password === password){
         localStorage.setItem('login',true)
         navigate('/')
       }
-    })
-  }
+      // else{
+      //   alert('User is not registered')
+      // }
+      })
+    }
+    const [users,setusers] = useState([])
+  useEffect(()=>{
+        const data = axios.get('http://localhost:5000/credentials')
+        .then((res)=>{
+            setusers(res.data)
+        })
+    },[])
   useEffect(()=>{
     let login = localStorage.getItem('login')
     if(login){
@@ -47,7 +58,10 @@ const Login = () => {
         <div className="right">
           <h5>Login</h5>
           <p className="registration">
-            Don't have an account? <a href="#">Create Your Account</a> it takes
+            Don't have an account? 
+            <Link to='/register'>
+            <a href="">Create Your Account</a>
+            </Link> it takes
             less than a minute
           </p>
           <div className="inputs">
