@@ -1,0 +1,147 @@
+{
+  "mobile": [
+    {
+      "id": 1,
+      "name": "Iphone 14",
+      "price": "90000",
+      "image": "../../images/mobiles/iphone14.jpeg",
+      "description": "15.54 cm (6.1-inch) Super Retina XDR display featuring Always-On and ProMotion.48MP Main camera for up to 4x greater resolution.All-day battery life and up to 23 hours of video playback."
+    },
+    {
+      "id": 2,
+      "name": "Samsung S23",
+      "price": "120000",
+      "image": "../../images/mobiles/samsung s23.jpg",
+      "description": "More innovation, less footprint - Galaxy S23 Ultra's striking symmetrical design returns with one major difference: recycled and eco-conscious materials. From the metal frame to the glass finish, it's polished with fresh new colors inspired by nature."
+    },
+    {
+      "id": 3,
+      "name": "Vivo V12",
+      "price": "40000",
+      "image": "../../images/mobiles/vivo v12.jpg",
+      "description": "new details added 50MP+2MP Rear Camera | 8MP Selfie Camera.16.86 cm (6.64 inch) FHD+ Sunlight Display.Memory & SIM: 6GB RAM | 128GB internal memory.44W flashCharge with 5000 mAh battery"
+    },
+    {
+      "id": 4,
+      "name": "Redmi 12",
+      "price": "10000",
+      "image": "../../images/mobiles/redmi12.jpg",
+      "description": "4 GB RAM | 128 GB ROM | Expandable Upto 1 TB.17.25 cm (6.79 inch) Full HD+ Display.50MP + 8MP + 2MP | 8MP Front Camera.5000 mAh Battery.Helio G88 Processor"
+    },
+    {
+      "id": 5,
+      "name": "Poco M6",
+      "price": "9000",
+      "image": "../../images/mobiles/poco m6.jpg",
+      "description": "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB/17.25 cm (6.79 inch) Full HD+ Display/50MP + 2MP | 8MP Front Camera/5000 mAh Battery/Snapdragon 4 Gen 2 Processor"
+    },
+    {
+      "id": 6,
+      "name": "Realme Narzo 60 pro",
+      "price": "26999",
+      "image": "../../images/mobiles/realme_narzo_60.jpg",
+      "description": "Immerse yourself in a smooth and responsive visual experience with our vibrant 90Hz Super AMOLED display. Enjoy seamless scrolling, fluid animations, and razor-sharp image quality, bringing your content to life like never before. Whether you're gaming, browsing, or watching videos, every interaction will be a delight for your eyes."
+    }
+  ],
+  "electronics": [
+    {
+      "id": 1,
+      "name": "Washing Machine",
+      "price": "23000",
+      "image": "../../images/electronics/Washing Machine.jpg",
+      "description": "Fully Automatic Top Load Washing Machines are ergonomically friendly and provide great wash quality,800 rpm : Higher the spin speed, lower the drying time,Number of wash programs - 8,5 Star Rating,6.5 kg"
+    },
+    {
+      "id": 2,
+      "name": "Microwave Oven",
+      "price": "10000",
+      "image": "../../images/electronics/oven.jpg",
+      "description": "32 L : Great for Large families,Convection : Can be used for baking along with grilling, reheating, defrosting and cooking,Tact (Buttons) : Even with hands soiled with dough, these buttons can be used,Child Lock : Ensures complete safety especially for homes with small children"
+    },
+    {
+      "id": 3,
+      "name": "Air conditioner",
+      "price": "40000",
+      "image": "../../images/electronics/ac.jpg",
+      "description": "32 L : Great for Large families,Convection : Can be used for baking along with grilling, reheating, defrosting and cooking,Tact (Buttons) : Even with hands soiled with dough, these buttons can be used,Child Lock : Ensures complete safety especially for homes with small children"
+    },
+    {
+      "id": 4,
+      "name": "Mixer Grinder",
+      "price": "5000",
+      "image": "../../images/electronics/mixer grinder.jpg",
+      "description": "500 W : Higher the Wattage, tougher the Juicing/Grinding,Suitable for: Chutney Grinding"
+    },
+    {
+      "id": 5,
+      "name": "Tv",
+      "price": "35000",
+      "image": "../../images/electronics/tv.jpg",
+      "description": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube, Operating System: Android (Google Assistant & Chromecast in-built), Resolution: HD Ready 1366 x 768 Pixels, Sound Output: 20 W, Refresh Rate: 60 Hz"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "name": "The 48 Laws of Power",
+      "price": "799",
+      "image": "../../images/books/laws.jpg",
+      "description": "details"
+    },
+    {
+      "id": 2,
+      "name": "The Murder of Roger Ackroyd",
+      "price": "499",
+      "image": "../../images/books/roger ackroyd.jpg",
+      "description": "details"
+    },
+    {
+      "id": 3,
+      "name": "The Immortals of Meluha",
+      "price": "415",
+      "image": "../../images/books/the-immortals-of-meluha.jpg",
+      "description": "details"
+    },
+    {
+      "id": 4,
+      "name": "Gone Girl",
+      "price": "500",
+      "image": "../../images/books/gone girl.jpg",
+      "description": "details"
+    },
+    {
+      "id": 5,
+      "name": "Verity",
+      "price": "350",
+      "image": "../../images/books/Verity.jpg",
+      "description": "details"
+    },
+    {
+      "id": 6,
+      "name": "The Silence of the Lambs",
+      "price": "600",
+      "image": "../../images/books/the silence of the lambs.jpg",
+      "description": "details"
+    },
+    {
+      "name": "Mein Kampf",
+      "description": "Autobiography - Adolf Hitler",
+      "price": "800",
+      "image": "https://tse2.mm.bing.net/th/id/OIP.Marj5skQsEjqst0ArfV8FgHaKe?pid=ImgDet&rs=1",
+      "category": "books",
+      "id": 7
+    }
+  ],
+  "fashion": [
+    {
+      "id": 1,
+      "name": "Men",
+      "image": "../../images/samsung s23.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Women",
+      "image": "../../images/samsung s23.jpg"
+    }
+  ]
+}

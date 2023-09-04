@@ -12,6 +12,9 @@ const Login = () => {
     users.map((user)=>{
       if(user.username === userName && user.password === password){
         localStorage.setItem('login',true)
+        if(user.role === 'admin'){
+          localStorage.setItem('admin',true)
+        }
         navigate('/')
       }
       // else{

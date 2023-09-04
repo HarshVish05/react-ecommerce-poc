@@ -4,25 +4,42 @@ import Card from 'react-bootstrap/Card';
 import product from '../../products.json'
 import { Link, useLocation,useNavigate } from 'react-router-dom';
 import styles from './cards.css'
+import axios from 'axios'
 
 
 
 function Cards() {
-  // console.log(props.selectedCategory);
+  
   const location =  useLocation()
   const navigate = useNavigate()
-  const [details,setDetails] = useState(product)
-  // const [product,setProduct] = useState()
+  const [details,setDetails] = useState([])
+ 
   
   const selectedCategory = location.state?.category
-  const selectedProducts = details[selectedCategory] || []
-  const showDetails = (prod)=>{
-   
-    navigate("/details",{state:{prod}})
+  const fetchData = () =>{
+    const product = axios.get(`http://localhost:5001/${selectedCategory}`)
+    .then((res)=>(
+      setDetails(res.data)
+      ))
   }
+  useEffect(()=>{
+    fetchData()
+    },[details])
+    // const selectedProducts = details[selectedCategory] || []
+    console.log(details);
+  const showDetails = (prod)=>{
+    
+    navigate("/details",{state:{prod,selectedCategory:location.state?.category}})
+  }
+  const handleDelete =  (index) =>{
+    axios.delete(`http://localhost:5001/${selectedCategory}/${index}`)
+
+    // fetchData()
+  }
+  const isAdmin = localStorage.getItem('admin')==='true';
   return (
     <div className='container'>
-    {selectedProducts.map(value=>{
+    {details.map((value)=>{
       return <Card key = {value.id} style={styles.card}>
              <Card.Img variant="top" src={value.image} />
              <Card.Body>
@@ -31,7 +48,11 @@ function Cards() {
                  Price: Rs {value.price}
                </Card.Text>
                
-               <Button variant="primary" onClick={()=>showDetails(value.name)}>Details</Button>
+               <Button variant="primary" onClick={()=>showDetails(value.name)}>Details</Button><br/><br/>
+               
+               {isAdmin && (
+               <Button variant="primary" onClick={()=>handleDelete(value.id)}>Delete</Button>
+               )}
                
             </Card.Body>
            </Card>

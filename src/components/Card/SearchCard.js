@@ -4,11 +4,15 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useLocation,useNavigate } from 'react-router-dom'
 import details from '../../details.json'
+import axios from 'axios'
 
 const SearchCard = () => {
     const location = useLocation()
     const navigate = useNavigate()
     const searchProd = location.state?.searchTerm.toLowerCase()
+    // useEffect(()=>{
+    //   axios.get()
+    // },[])
     
     const products = Object.keys(details).filter((productName)=>{
         

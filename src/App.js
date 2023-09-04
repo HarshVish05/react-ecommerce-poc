@@ -11,6 +11,8 @@ import SearchCard from './components/Card/SearchCard';
 import Login from './components/Login/Login';
 import Protected from './components/auth/Protected';
 import Registration from './components/Register/Registration';
+import AddProducts from './components/admin/AddProducts';
+import EditProducts from './components/admin/EditProducts';
 
 function App() {
   const [category, setSelectedCategory] = useState('');
@@ -20,6 +22,8 @@ function App() {
       <BrowserRouter>
       <Navbar/>
       <Routes>
+        <Route  path="/addProducts" element={<AddProducts />} />
+        <Route  path="/editDetails" element={<EditProducts />} />
       <Route path="/login" element={<Login/>}/>
       <Route path="/register" element={<Registration/>}/>
       <Route path="/" element={<Protected> <CarouselComp/> </Protected>}/>

@@ -17,11 +17,12 @@ const Navbar = () => {
     navigate('/cart')
   }
   const logout = () => {
-    // localStorage.setItem('login',false);
     localStorage.removeItem('login')
+    localStorage.removeItem('admin')
     navigate('/login');
   }
 
+  const isLoggedIn = localStorage.getItem('login')==='true';
   return (
     
     <nav
@@ -30,18 +31,7 @@ const Navbar = () => {
     >
       <div className="container-fluid">
         <Link className="link" to="/">LeloKart</Link>
-        {/* <a className="navbar-brand" href="/"></a> */}
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
@@ -70,12 +60,15 @@ const Navbar = () => {
           <div>
             <BsCart className="shoppingCart" onClick={showCart} />
           </div>
+          {isLoggedIn && (
+
           <button
               className="btn btn-outline-success button logout"
               onClick={logout}
             >
               Logout
             </button>
+          )}
         </div>
       </div>
     </nav>
