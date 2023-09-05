@@ -2,15 +2,15 @@
   "credentials": [
     {
       "username": "rohit",
-      "password": "dada",
+      "password": "1234",
       "role": "admin",
-      "id": 6
+      "id": 1
     },
     {
       "username": "harsh",
-      "password": "12345",
+      "password": "123456",
       "role": "user",
-      "id": 7
+      "id": 2
     }
   ]
 }

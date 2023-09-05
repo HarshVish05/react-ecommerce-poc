@@ -23,6 +23,7 @@ const AddProducts = () => {
         e.preventDefault()
         try{
             axios.post(`http://localhost:5001/${productData.category}`,productData)
+            alert("Product added successfully")
         }catch(error){
             alert('Error adding product')
             console.log(error);
@@ -32,7 +33,7 @@ const AddProducts = () => {
             description: '',
             price: '',
             category: 'mobile',
-            imageLink: '',
+            image: '',
           });
     }
   return (

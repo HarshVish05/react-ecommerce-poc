@@ -6,15 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import { CartProvider } from './CartContext';
 import { Provider } from 'react-redux';
 import store from './Store'
+import ErrorBoundary from './components/ErrorBoundary';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <ErrorBoundary>
     <Provider store={store}>
     {/* <CartProvider> */}
     <App />
     {/* </CartProvider> */}
     </Provider>
+    </ErrorBoundary>
   </React.StrictMode>
 );
 

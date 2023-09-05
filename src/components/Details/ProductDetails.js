@@ -26,8 +26,9 @@ const ProductDetails = () => {
       setProduct(res.data)
     })
   },[product])
-  const goToCart = ()=> {
-    dispatch(addToCart(details[selectedProd],quantity))
+  const goToCart = (name)=> {
+    dispatch(addToCart(product[product.findIndex((element)=>element.name===name)],quantity))
+    // dispatch(addToCart(details[selectedProd],quantity))
     navigate("/cart",{state:{quantity}})
   }
   
@@ -69,7 +70,7 @@ const ProductDetails = () => {
         </button>
       </div>
       <div className="cart">
-        <button type="submit" className="cartbutton" onClick={goToCart}>Add to cart</button><br /><br />
+        <button type="submit" className="cartbutton" onClick={()=>goToCart(value.name)}>Add to cart</button><br /><br />
       {isAdmin && (
 
       <button type="submit" className="cartbutton" onClick={()=>editDetails(value.id)}>Edit Details</button>

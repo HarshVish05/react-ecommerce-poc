@@ -134,14 +134,20 @@
   ],
   "fashion": [
     {
-      "id": 1,
-      "name": "Men",
-      "image": "../../images/samsung s23.jpg"
+      "name": "T-Shirt",
+      "description": "Van Heusen Men's Regular Fit Polo Shirt",
+      "price": "600",
+      "image": "https://m.media-amazon.com/images/I/71V4RsIUADL._UY879_.jpg",
+      "category": "fashion",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Women",
-      "image": "../../images/samsung s23.jpg"
+      "name": "Shirt",
+      "description": "100% Cotton (Poplin) Machine Wash",
+      "price": "800",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1654785345_4183202.jpg?w=360&dpr=1.5",
+      "category": "fashion",
+      "id": 2
     }
   ]
 }
