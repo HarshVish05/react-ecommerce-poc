@@ -12,11 +12,10 @@ const EditProducts = ({ productId }) => {
   const selectedCategory = location.state?.category;
 
   useEffect(() => {
-    // Fetch the product details by productId
     axios.get(`http://localhost:5001/${selectedCategory}/${prodId}`)
       .then((response) => {
         setProduct(response.data);
-        // Initialize the updatedProduct with the current details
+        
         setUpdatedProduct(response.data);
       })
       .catch((error) => {
@@ -26,7 +25,6 @@ const EditProducts = ({ productId }) => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    // Update the updatedProduct object with the new input value
     setUpdatedProduct({
       ...updatedProduct,
       [name]: value,
@@ -34,14 +32,8 @@ const EditProducts = ({ productId }) => {
   };
 
   const handleUpdateProduct = () => {
-    // Send a PUT request to update the product details
+    
     axios.put(`http://localhost:5001/${selectedCategory}/${prodId}`, updatedProduct)
-      .then((response) => {
-        console.log('Product updated successfully: ', response.data);
-        console.log(response.data.name);
-        // setProd(response.data.name);
-        //   navigate("/details",{state:{prod,selectedCategory:location.state?.category}})
-    })
     .catch((error) => {
         console.error('Error updating product: ', error);
     });
@@ -49,12 +41,6 @@ const EditProducts = ({ productId }) => {
     navigate('/details',{state:{selectedCategory,prod:updatedProduct.name}});
 
 };
-// useEffect(() => {
-//     if (prod !== '') {
-//         console.log(prod); 
-//     //   alert("Product updated successfully");
-//     }
-//   }, [prod]);
 
   return (
     <div>
@@ -78,7 +64,7 @@ const EditProducts = ({ productId }) => {
           value={updatedProduct.price}
           onChange={handleInputChange}
         />
-        {/* Add more input fields for other product details */}
+        
       </form>
       <button onClick={handleUpdateProduct}>Save Changes</button>
     </div>

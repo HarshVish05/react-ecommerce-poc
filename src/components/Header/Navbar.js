@@ -4,7 +4,7 @@ import "./navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  // console.log("navbar rendering");
+  
   const navigate = useNavigate();
   const [searchTerm, setsearchTerm] = useState("");
 

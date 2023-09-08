@@ -39,16 +39,16 @@ const AddProducts = () => {
   return (
     <div>
         <form onSubmit={handleOnSubmit}>
-            <input type="text" name='name' placeholder='Name of the Product' value={productData.name} onChange={handleOnChange}/>
-            <input type="text" name='description' placeholder='description' value={productData.description} onChange={handleOnChange}/>
-            <input type="number" name='price' placeholder='Price' value={productData.price} onChange={handleOnChange}/>
-            <input type="text" name='image' placeholder='Image Link' value={productData.image} onChange={handleOnChange}/>
+            <input type="text" name='name' placeholder='Name of the Product' value={productData.name} onChange={handleOnChange}/><br /><br />
+            <input type="text" name='description' placeholder='description' value={productData.description} onChange={handleOnChange}/><br /><br />
+            <input type="number" name='price' placeholder='Price' value={productData.price} onChange={handleOnChange}/><br /><br />
+            <input type="text" name='image' placeholder='Image Link' value={productData.image} onChange={handleOnChange}/><br /><br />
             <select name='category' value={productData.category} onChange={handleOnChange}>
                 <option value="mobile">Mobile</option>
                 <option value="electronics">Electronics</option>
                 <option value="fashion">Fashion</option>
                 <option value="books">Books</option>
-            </select>
+            </select><br /><br />
             <button type="submit">Add Product</button>
         </form>
     </div>

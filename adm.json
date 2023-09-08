@@ -10,7 +10,7 @@
     {
       "id": 2,
       "name": "Samsung S23",
-      "price": "120000",
+      "price": "110000",
       "image": "../../images/mobiles/samsung s23.jpg",
       "description": "More innovation, less footprint - Galaxy S23 Ultra's striking symmetrical design returns with one major difference: recycled and eco-conscious materials. From the metal frame to the glass finish, it's polished with fresh new colors inspired by nature."
     },
@@ -148,6 +148,22 @@
       "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1654785345_4183202.jpg?w=360&dpr=1.5",
       "category": "fashion",
       "id": 2
+    },
+    {
+      "name": "Kanjivaram Soft Silk Saree",
+      "description": "Kanchipuram Silk, Blouse Fabric Kanchipuram Silk. Work: Jacquard Woven Stylish Sari, Stylish Woven",
+      "price": "950",
+      "image": "https://m.media-amazon.com/images/I/712r6exQc+L._UX679_.jpg",
+      "category": "fashion",
+      "id": 3
+    },
+    {
+      "name": "Men Regular Fit Grey Cotton Blend Trousers",
+      "description": "Regular Fit- size 38",
+      "price": "959",
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/trouser/b/a/h/32-astfqsrfi49738-allen-solly-original-imagrmd4wczc2heh.jpeg?q=70",
+      "category": "fashion",
+      "id": 4
     }
   ]
 }

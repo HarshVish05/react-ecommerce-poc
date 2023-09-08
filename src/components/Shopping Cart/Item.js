@@ -9,6 +9,7 @@ import { deleteCart, removeFromCart } from "../../redux/Action/action";
 export const Item = () => {
   
   const cartItems = useSelector((state)=>state.cart.cartItems)
+  // const [updatedCart,setUpdatedCart] = useState(cartItems)
 
   const dispatch = useDispatch()
   const [quantity, setQuantity] = useState(0)
@@ -19,6 +20,7 @@ export const Item = () => {
 
     const handleremoveFromCart = (itemId) => {
       console.log("remove clicked");
+      // setUpdatedCart(updatedCart.filter((item)=> item.id !== itemId));
       const updatedCart = cartItems.filter((item)=> item.id !== itemId);
       dispatch(removeFromCart(itemId))
     }
