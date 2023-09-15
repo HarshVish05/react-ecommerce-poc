@@ -3,8 +3,8 @@ import styles from './cards.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useLocation,useNavigate } from 'react-router-dom'
-import details from '../../details.json'
 import axios from 'axios'
+import axiosInstance from '../../axios'
 
 const SearchCard = () => {
     const location = useLocation()
@@ -12,21 +12,19 @@ const SearchCard = () => {
     const [productList,setProductList] = useState([]);
     const searchProd = location.state?.searchTerm.toLowerCase()
     useEffect(()=>{
-      const response1 =  axios.get(`http://localhost:5001/mobile`)
-      const response2 =  axios.get(`http://localhost:5001/electronics`)
-      const response3 =  axios.get(`http://localhost:5001/fashion`)
-      const response4 =  axios.get(`http://localhost:5001/books`)
+      const response1 =  axiosInstance.get(`/mobile`)
+      const response2 =  axiosInstance.get(`/electronics`)
+      const response3 =  axiosInstance.get(`/fashion`)
+      const response4 =  axiosInstance.get(`/books`)
 
       axios.all([response1,response2,response3,response4])
       .then(axios.spread((...responses)=>{
+        // console.log(responses);
+        // const allresponses = responses.map(response=>response.data)
+        // console.log(allresponses);
         const allresponses = responses.map(response=>response.data).flat()
         setProductList(allresponses)
       }))
-      
-      // const productsData = response.data
-      
-      // const allProducts = Object.values(productsData).flat()
-      // setProductList(allProducts)
       
     },[])
     
@@ -39,6 +37,7 @@ const SearchCard = () => {
    
         navigate("/details",{state:{prod}})
       }
+
   return (
     <div className='container'>
         {products.map((value)=>(
@@ -56,22 +55,7 @@ const SearchCard = () => {
           </Card>
         ))}
     </div>
-    // <div className='container'>
-    //     {products.map((value)=>(
-    //         <Card key = {details[value].id} style={styles.card}>
-    //         <Card.Img variant="top" src={details[value].image} />
-    //         <Card.Body>
-    //           <Card.Title>{details[value].name}</Card.Title>
-    //           <Card.Text>
-    //             Price: Rs {details[value].price}
-    //           </Card.Text>
-              
-    //           <Button variant="primary" onClick={()=>showDetails(value)}>Details</Button>
-              
-    //        </Card.Body>
-    //       </Card>
-    //     ))}
-    // </div>
+    
   )
 }
 

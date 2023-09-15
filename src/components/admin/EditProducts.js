@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useLocation, useNavigate } from 'react-router-dom';
+import axiosInstance from '../../axios'
 
 const EditProducts = ({ productId }) => {
   const [product, setProduct] = useState({});
@@ -12,7 +13,7 @@ const EditProducts = ({ productId }) => {
   const selectedCategory = location.state?.category;
 
   useEffect(() => {
-    axios.get(`http://localhost:5001/${selectedCategory}/${prodId}`)
+    axiosInstance.get(`/${selectedCategory}/${prodId}`)
       .then((response) => {
         setProduct(response.data);
         
@@ -33,7 +34,7 @@ const EditProducts = ({ productId }) => {
 
   const handleUpdateProduct = () => {
     
-    axios.put(`http://localhost:5001/${selectedCategory}/${prodId}`, updatedProduct)
+    axiosInstance.put(`/${selectedCategory}/${prodId}`, updatedProduct)
     .catch((error) => {
         console.error('Error updating product: ', error);
     });

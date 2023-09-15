@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
+import axiosInstance from '../../axios'
 
 const AddProducts = () => {
     const [productData,setProductData] = useState({
@@ -22,7 +23,7 @@ const AddProducts = () => {
     const handleOnSubmit = (e) =>{
         e.preventDefault()
         try{
-            axios.post(`http://localhost:5001/${productData.category}`,productData)
+            axiosInstance.post(`${productData.category}`,productData)
             alert("Product added successfully")
         }catch(error){
             alert('Error adding product')

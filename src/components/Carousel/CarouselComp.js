@@ -1,10 +1,10 @@
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import styles from "./CarouselComp.module.css";
-import mobiles from "../../images/mobiles.png";
-import electronics from "../../images/electronics.jpg";
-import fashion from "../../images/fashion.jpg";
-import books from "../../images/books.jpg";
+import mobiles from "../../assets/mobiles.png";
+import electronics from "../../assets/electronics.jpg";
+import fashion from "../../assets/fashion.jpg";
+import books from "../../assets/books.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 

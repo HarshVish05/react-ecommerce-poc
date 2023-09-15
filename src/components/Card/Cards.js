@@ -5,6 +5,7 @@ import product from '../../products.json'
 import { Link, useLocation,useNavigate } from 'react-router-dom';
 import styles from './cards.css'
 import axios from 'axios'
+import axiosInstance from '../../axios'
 
 
 
@@ -17,7 +18,8 @@ function Cards() {
   
   const selectedCategory = location.state?.category
   const fetchData = () =>{
-    const product = axios.get(`http://localhost:5001/${selectedCategory}`)
+    const product = axiosInstance.get(`${selectedCategory}`)
+    // const product = axios.get(`http://localhost:5001/${selectedCategory}`)
     .then((res)=>(
       setDetails(res.data)
       ))
@@ -26,13 +28,15 @@ function Cards() {
     fetchData()
     },[details])
     // const selectedProducts = details[selectedCategory] || []
-    console.log(details);
+    // console.log(details);
+    
+    
   const showDetails = (prod)=>{
     
     navigate("/details",{state:{prod,selectedCategory:location.state?.category}})
   }
   const handleDelete =  (index) =>{
-    axios.delete(`http://localhost:5001/${selectedCategory}/${index}`)
+    axiosInstance.delete(`${selectedCategory}/${index}`)
 
     // fetchData()
   }

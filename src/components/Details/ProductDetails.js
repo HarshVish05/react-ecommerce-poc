@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import details from "../../details.json";
-// import products from "../../products.json";
 import "./prodDetails.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useCart } from "../../CartContext";
@@ -8,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { addToCart,deductFromCart } from "../../redux/Action/action";
 import { useEffect } from "react";
 import axios from 'axios'
+import axiosInstance from '../../axios'
 
 const ProductDetails = () => {
   const location = useLocation();
@@ -21,14 +21,13 @@ const ProductDetails = () => {
   const category = location.state?.selectedCategory;
   const isAdmin = localStorage.getItem('admin')==='true';
   useEffect(()=>{
-    const data = axios.get(`http://localhost:5001/${category}`)
+    const data = axiosInstance.get(`${category}`)
     .then((res)=>{
       setProduct(res.data)
     })
   },[product])
   const goToCart = (name)=> {
     dispatch(addToCart(product[product.findIndex((element)=>element.name===name)],quantity))
-    // dispatch(addToCart(details[selectedProd],quantity))
     navigate("/cart",{state:{quantity}})
   }
   
